@@ -3,263 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
     <script src="https://kit.fontawesome.com/bb5dc24a56.js" crossorigin="anonymous"></script>
     <title>Portfólio</title>
 </head>
 <body>
-    <header>
-        <nav id="menu">
-            <ul>
-                <li><a href="#ficha" class="link"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#projetos" class="link"><i class="fa-solid fa-cubes-stacked"></i></a></li>
-                <li><a href="#" id="botao-tema" class="link"><i class="fa-solid fa-moon"></i></a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container-principal">
 
-    <main>
-        <section id="ficha">
-            <img src="" alt="" class="foto">
-            <h1>Nicolas Maximiano</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsam minus atque nesciunt iure. Similique obcaecati quibusdam fuga omnis. Natus sequi veritatis repellendus, temporibus enim quos aspernatur quia repellat aperiam.</p>
-            <div id="social">
-                <a href="" target="_blank" rel="nofollow" ><i class="fa-brands fa-linkedin"></i></a>
-                <a href="" target="_blank" rel="nofollow" ><i class="fa-brands fa-github"></i></a>
-                <a href="" target="_blank" rel="nofollow" ><i class="fa-brands fa-youtube"></i></a>
-                <a href="" target="_blank" rel="nofollow" > <i class="fa-brands fa-instagram"></i></i></a>
-                <a href="" target="_blank"rel="nofollow" > <i class="fa-solid fa-globe"></i>
-                </a>
-            </div>
+        <header class="header">
+            <img src="imagens/logo.png" alt="" class="perfil">
 
-        </section>
+            <nav class="menu">
+                <a href="#home" class="link"><i class="fa-regular fa-house"></i></a>
+                <a href="#about" class="link"><i class="fa-solid fa-circle-user"></i></a>
+                <a href="#projects" class="link"><i class="fa-solid fa-trowel-bricks"></i></a>
+                <a href="#contato" class="link"><i class="fa-solid fa-phone"></i></a>
+            </nav>
+            <button class="tema-bnt">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+        </header>
 
-        <section id="detalhes">
-
-            <article id="skills">
-                    <h2> <i class="fa-solid fa-brain"></i>  Minhas skills</h2>
-                    <div id="skill-container">
-                        <div class="item">
-                            <div class="info">
-                                <span class="nome">
-                                   <i class="fa-solid fa-code"></i> HTML5
-                                </span>
-                                <span class="porcent">
-                                    90%
-                                </span>
-                            </div>
-                            <div class="barra">
-                                <div class="progresso" style="width: 90%;">
-                    
-                                </div>
-                            </div>
+        <main>
+            <section class="home">
+                <img src="imagens/IMG_3450.JPEG" alt="" class="foto-home">
+                
+                    <div class="home-info">
+                        <h1 class="titulo-home">Nicolas Maximiano</h1>
+                        <p class="sub-titulo-home">Desenvolvedor Full-Stack</p>
+                        <div id="social">
+                            <a href="#"><i class="fa-brands fa-linkedin-in" style="color: rgb(0, 0, 0);"></i></a>
+                            <a href="#"><i class="fa-brands fa-github" style="color: rgb(0, 0, 0);"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(0, 0, 0);"></i></a>
                         </div>
-
-                        <div class="item">
-                            <div class="info">
-                                <span class="nome">
-                                   <i class="fa-solid fa-code"></i> CSS
-                                </span>
-                                <span class="porcent">
-                                    80%
-                                </span>
-                            </div>
-                            <div class="barra">
-                                <div class="progresso" style="width: 80%;">
-                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="info">
-                                <span class="nome">
-                                   <i class="fa-solid fa-code"></i> JavaScript
-                                </span>
-                                <span class="porcent">
-                                    20%
-                                </span>
-                            </div>
-                            <div class="barra">
-                                <div class="progresso" style="width: 20%;">
-                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="info">
-                                <span class="nome">
-                                   <i class="fa-solid fa-code"></i> Java
-                                </span>
-                                <span class="porcent">
-                                    0%
-                                </span>
-                            </div>
-                            <div class="barra">
-                                <div class="progresso" style="width: 0%;">
-                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="info">
-                                <span class="nome">
-                                   <i class="fa-solid fa-comments"></i> Comunicação
-                                </span>
-                                <span class="porcent">
-                                    100%
-                                </span>
-                            </div>
-                            <div class="barra">
-                                <div class="progresso" style="width: 100%;">
-                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="info">
-                                <span class="nome">
-                                   <i class="fa-solid fa-comments"></i> Trabalho em equipe
-                                </span>
-                                <span class="porcent">
-                                    90%
-                                </span>
-                            </div>
-                            <div class="barra">
-                                <div class="progresso" style="width: 90%;">
-                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="info">
-                                <span class="nome">
-                                   <i class="fa-solid fa-comments"></i> Liderança
-                                </span>
-                                <span class="porcent">
-                                    100%
-                                </span>
-                            </div>
-                            <div class="barra">
-                                <div class="progresso" style="width: 100%;">
-                    
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+
+            </section>
+
+            <section class="about">
+
+                <div id="titulo-about"><a href=""><i class="fa-solid fa-user" style="color: rgb(125, 47, 213);"></i></a> <h3>Sobre mim</h3></div>
+
+                <div class="texto-about">
+                    <p>Estudante e apaixonado por tecnologia, com foco na criação de aplicações modernas, responsivas e intuitivas. Busco desenvolver soluções que unam desempenho, organização e uma boa experiência para o usuário, sempre aplicando boas práticas de programação e design.</p>
                     
-            </article> <!-- fim article skills -->
+                    <p>Sou Técnico em Desenvolvimento de Sistemas, formação que me proporcionou uma base sólida em desenvolvimento de software, banco de dados e tecnologias voltadas para aplicações web. </p>
+                </div>
 
-            <article id="formacao"> 
-                <h2><i class="fa-solid fa-graduation-cap"></i>  Formação</h2>
+                <div class="card-container">
+                    <div class="cards">
+                        <a class="icone-card" id="experiencia-card"><i class="fa-solid fa-book" style="color: rgb(97, 165, 218);"></i></a>
+                        <h4  class="titulo-card">Expêriencia</h4>
+                        <h4 style="color: rgb(97, 165, 218);" class="sub-titulo-card">+2 anos </h4>
 
-                <div id="formacao-container">
+                        <p>Estudando e desenvolvendo soluções web escaláveis</p>
+                    </div>
 
-                    <div class="curso">
-                        <p class="periodo">2025 - 2026</p>
-                        <h3 class="instituicao">Escola técnica integrado ao Ensino Médio - FIEC</h3>
-                        <p>Técnico em Desenvolvimento de Sistemas</p>
+                    <div class="cards">
+                        <a class="icone-card" id="formacao-card"><i class="fa-solid fa-graduation-cap" style="color: rgb(87, 201, 143);"></i></a>
+                        <h4 class="titulo-card">Formação</h4>
+                        <h4 style="color: rgb(87, 201, 143);" class="sub-titulo-card">Técnico em Desenvolvimento de Sistemas</h4>
+
+                        <p>Ensino Técnico</p>
+                    </div>
+
+                    <div class="cards">
+                        <a class="icone-card" id="projetos-card"><i class="fa-solid fa-code" style="color: rgb(177, 151, 252);"></i></a>
+                        <h4  class="titulo-card">Projetos</h4>
+                        <h4 style="color: rgb(177, 151, 252);" class="sub-titulo-card">+5</h4>
+
+                        <p>Projetos concluídos com sucesso</p>
                     </div>
 
                 </div>
 
+            </section>
 
-            </article> <!-- fim article formacao -->
+            <section id="skills">
 
-            <article id="projetos"> 
-                <h2><i class="fa-solid fa-cubes-stacked"></i>  Meus projetos</h2>
-
-                <div id="projeto-container">
+                 <div id="titulo-skills"><a href=""><i class="fa-solid fa-cubes-stacked"  style="color: rgb(125, 47, 213);" ></i></a><h3>Minhas habilidades</h3></div>
 
 
-                    <div class="projeto"> <!--Projeto 01-->
-                        <img src="imagens/projeto-01-videos.jpg" alt="Projeto 1" class="foto">
-                        <div class="projeto-info">
-                            <p class="periodo">Curso em vídeo</p>
-                            <h3 class="titulo">Projeto de Vídeos</h3>
-                            <p>Projeto construído para treinar a inserção de vídeos em nosso site.</p>
-                            <details class="descricao">
-                                <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, temporibus quasi esse exercitationem voluptatum dolor et cumque natus excepturi velit atque molestias magnam quae, ea dignissimos corrupti labore, saepe tempora.</p>
-                            </details>
+                <div id="container-skills">
+
+                    <div class="cards-skills">
+                        <div id="titulo-card-skills"><a href="" style="background-color: rgba(116, 193, 252, 0.353);"><i class="fa-solid fa-display" style="color: rgb(82, 177, 249);"></i></a> <h3>Frond-end</h3></div>
+
+                        <div class="area-skills">
+                            <a class="icone-skills"><i class="fa-brands fa-html5" style="color: rgb(238, 126, 39);"></i> 
+                            <p>HTML</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-css3-alt" style="color: rgb(44, 134, 205);"></i> 
+                            <p>CSS</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-square-js" style="color: rgb(255, 212, 59);"></i>
+                            <p>Java <br>Script</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-typescript" style="color: rgb(53, 137, 204);"></i>
+                            <p>Type <br>Script</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-react" style="color: rgb(92, 212, 244);"></i>
+                            <p>React</p></a>
                         </div>
                     </div>
 
-                    <div class="projeto"> <!--Projeto 02-->
-                        <img src="imagens/projeto-02-cordel.jpg" alt="Projeto 2" class="foto">
-                        <div class="projeto-info">
-                            <p class="periodo">Curso em vídeo</p>
-                            <h3 class="titulo">Projeto Cordel</h3>
-                            <p>Projeto construído para treinar efeito paralax em imagens.</p>
-                            <details class="descricao">
-                                <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, temporibus quasi esse exercitationem voluptatum dolor et cumque natus excepturi velit atque molestias magnam quae, ea dignissimos corrupti labore, saepe tempora.</p>
-                            </details>
+                    <div class="cards-skills">
+                        <div id="titulo-card-skills"><a href="" style="background-color: rgba(87, 201, 142, 0.399);"><i class="fa-solid fa-server" style="color: rgb(87, 201, 143);"></i></a> <h3>Back-end</h3></div>
+
+                        <div class="area-skills">
+                            <a class="icone-skills"><i class="fa-brands fa-node" style="color: rgb(49, 195, 95);"></i> 
+                            <p>Node JS</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-java" style="color: rgb(61, 141, 205);"></i>
+                            <p>Java</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-php" style="color: rgb(11, 118, 202);"></i>
+                            <p>Php</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-python" style="color: rgb(71, 148, 210);"></i>
+                            <p>Python</p></a>
+
                         </div>
                     </div>
 
-                    <div class="projeto"> <!--Projeto 03-->
-                        <img src="imagens/projeto-03-android.jpg" alt="Projeto 3" class="foto">
-                        <div class="projeto-info">
-                            <p class="periodo">Curso em vídeo</p>
-                            <h3 class="titulo">Projeto Android</h3>
-                            <p>Projeto construído para treinar conteúdo e imagens dinâmicas.</p>
-                            <details class="descricao">
-                                <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, temporibus quasi esse exercitationem voluptatum dolor et cumque natus excepturi velit atque molestias magnam quae, ea dignissimos corrupti labore, saepe tempora.</p>
-                            </details>
+                    <div class="cards-skills">
+                        <div id="titulo-card-skills"><a href="" style="background-color: rgba(188, 124, 237, 0.399);"><i class="fa-solid fa-database" style="color: rgb(165, 101, 229);"></i></a> <h3>Bando de dados</h3></div>
+
+                        <div class="area-skills">
+                            <a class="icone-skills"><i class="fa-brands fa-postgresql" style="color: rgb(116, 192, 252);"></i> 
+                            <p>Postgree SQL</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-envira" style="color: rgb(69, 146, 123);"></i>
+                            <p>Mongo DB</p></a>
                         </div>
                     </div>
 
-                    <div class="projeto"> <!--Projeto 04-->
-                        <img src="imagens/projeto-04-links.jpg" alt="Projeto 4" class="foto">
-                        <div class="projeto-info">
-                            <p class="periodo">Curso em vídeo</p>
-                            <h3 class="titulo">Projeto navegando entre links</h3>
-                            <p>Projeto construído para treinar a inserção de links em nosso site.</p>
-                            <details class="descricao">
-                                <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, temporibus quasi esse exercitationem voluptatum dolor et cumque natus excepturi velit atque molestias magnam quae, ea dignissimos corrupti labore, saepe tempora.</p>
-                            </details>
+                    <div class="cards-skills">
+                        <div id="titulo-card-skills"><a href="" style="background-color: rgba(246, 231, 175, 0.389);"><i class="fa-solid fa-briefcase" style="color: rgb(255, 230, 0);"></i></a> <h3>Ferramentas</h3></div>
+
+                        <div class="area-skills">
+
+                            <a class="icone-skills"><i class="fa-brands fa-visual-studio" style="color: rgb(76, 159, 224);"></i>
+                            <p>VS Code</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-git-alt" style="color: rgb(235, 102, 32);"></i>
+                            <p>Git</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-github"></i>
+                            <p>GitHub</p></a>                         
+
+                            <a class="icone-skills"><i class="fa-brands fa-docker" style="color: rgb(26, 36, 221);"></i>
+                            <p>Docker</p></a>
+
+                            <a class="icone-skills"><i class="fa-brands fa-figma" style="color: rgb(177, 151, 252);"></i>
+                            <p>Figma</p></a>
                         </div>
                     </div>
-
-                    <div class="projeto"> <!--Projeto 05-->
-                        <img src="imagens/projeto-05-login.jpg" alt="Projeto 5" class="foto">
-                        <div class="projeto-info">
-                            <p class="periodo">Curso em vídeo</p>
-                            <h3 class="titulo">Projeto Tela de login</h3>
-                            <p>Projeto construção tela de login responsiva.</p>
-                            <details class="descricao">
-                                <summary>Saiba mais...</summary>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, temporibus quasi esse exercitationem voluptatum dolor et cumque natus excepturi velit atque molestias magnam quae, ea dignissimos corrupti labore, saepe tempora.</p>
-                            </details>
-                        </div>
-                    </div>
-
-
 
                 </div>
+            </section>
+
+            <section id="projetos">
+                <div id="titulo-projetos"><a href=""><i class="fa-solid fa-trowel-bricks" style="color: rgb(125, 47, 213);"></i></a> <h3>Projetos</h3></div>
+
+                             
+            </section>
 
 
-            </article> <!-- fim article projetos -->
 
-        </section>
 
-    </main>
-
-    <footer>
-        Portfólio desenvolvido por <a href="https://www.cursoemvideo.com/" target="_blank" rel="nofollow">Curso em Vídeo</a> em 2025
-    </footer>
-
-    <script src="scripts/script.js"></script>
+        </main>
+    </div>
 </body>
 </html>
